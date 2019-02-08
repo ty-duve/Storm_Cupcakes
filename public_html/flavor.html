@@ -2,7 +2,8 @@
 
 <html lang="en">
     <head>
-        <meta charset="utf-8">       
+        <meta charset="utf-8"> 
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">       
         <title>Storm Cupcakes</title>
     </head>
 
@@ -24,35 +25,48 @@
         </nav>
         <header>
             <h1>Flavors</h1>
-            <img src="cupcake.png" alt="Cupcake" />
         </header>
 
-
+            <img src="cupcake.png" alt="Cupcake" />
             <h2>Flavor page</h2>
+            <p id="mixandmatch">Mix and match any cake with any frosting.</p>
            
-
+            <h3>Cake Flavors</h3>
             
-    <table>
+    <table class="table">
         <tbody>
             <tr>
                 <td>Chocolate</td>
                 <td>Vanilla</td>
                 <td>Peanut Butter</td>
+                <td>Strawberry</td>
             </tr>
             <tr>
-                <td>Strawberry</td>
                 <td>Blueberry</td>
                 <td>Red Velvet</td>
-            </tr>
-            <tr>
-                <td>Wedding cake</td>
+                <td class="highlight">Wedding cake</td>
                 <td>Cookies and Creme</td>
-                <td>Monster</td>
             </tr>
             <tr>
+                <td>Monster</td>
                 <td>Marble</td>
                 <td>Mango</td>
                 <td>Birthday</td>
+            </tr>
+        </tbody>
+    </table>
+        <h3>Frosting Flavors</h3>
+    <table>
+        <tbody>
+            <tr>
+                <td>Vanilla</td>
+                <td>Chocolate</td>
+                <td>Peanut Butter</td>
+            </tr>
+            <tr>
+                <td>Cream Cheese</td>
+                <td>Almond</td>
+                <td>Coffee</td>
             </tr>
         </tbody>
     </table>
@@ -73,7 +87,6 @@
     Peanut Butter<br><br>
         <input type="submit" value="Submit">
     </form>
-
 
     <footer>
         <p>&copy; 2019 Storm Cupcake.<br />All rights reserved</p>
