@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+</head>
+<body>
+    <svg width="1000" height="700">
+        #background
+        <rect x="0" y="250" width="1000" height="450" style="fill:rgb(0,153,51)" />
+        <rect x="0" y="0" width="1000" height="250" style="fill:rgb(77,121,255)" />
+    
+        # garage
+        <rect x="200" y="400" width="350" height="200" style="fill:rgb(255,204,0);stroke-width:3;stroke:rgb(1,0,0)" />
+        
+        # house
+        <defs>
+            <filter id="f4" x="0" y="0" width="200%" height="200%">
+                <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+                <feColorMatrix result="matrixOut" in="offOut" type="matrix"
+                values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0" />
+                <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
+                <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+            </filter>
+        </defs>
+        <rect x="550" y="200" width="350" height="400" style="fill:rgb(255,204,0)";stroke-width="3" stroke="black" filter="url(#f4)" />
+        
+        # garage roof
+        <polygon points="185,410 375,220 560,410" style="fill:rgb(96,64,32);stroke:rgb(0,0,0);stroke-width:5" />
+        <polygon points="550,400 550,250 500,190 375,220" style="fill:rgb(96,64,32);stroke:rgb(0,0,0);stroke-width:5" />
+        
+        # house
+        <polygon points="900,200 980,150 990,370, 900,600" style="fill:rgb(255,204,0);stroke:rgb(0,0,0);stroke-width:3" />
+        
+        # house roof
+        <polygon points="540,210 730,40 910,210" style="fill:rgb(96,64,32);stroke:rgb(0,0,0);stroke-width:5" />
+        <polygon points="910,210 990,160 850,20 730,40" style="fill:rgb(96,64,32);stroke:rgb(0,0,0);stroke-width:5" />
+        
+        # garage door
+        <rect x="250" y="450" width="250" height="150" style="fill:rgb(0,77,0);stroke-width:4;stroke:rgb(0,0,0)" />
+        
+        # door roof
+        <polygon points="560,410 640,340 720,410" style="fill:rgb(96,64,32);stroke:rgb(0,0,0);stroke-width:5" />
+        <polygon points="720,410 745,390 670,320 640,340" style="fill:rgb(96,64,32);stroke:rgb(0,0,0);stroke-width:5" />
+        
+        # front door
+        <rect x="600" y="450" width="100" height="150" style="fill:rgb(0,77,0);stroke-width:4;stroke:rgb(0,0,0)" />
+        
+        # door knob
+        <circle cx="680" cy="525" r="5" style="fill:rgb(0,0,0);stroke-width:4;stroke:rgb(0,0,0)" />
+        
+        # windows
+        <rect x="750" y="250" width="100" height="100" style="fill:rgb(255,255,255);stroke-width:4;stroke:rgb(0,0,0)" />
+        <rect x="750" y="450" width="100" height="100" style="fill:rgb(255,255,255);stroke-width:4;stroke:rgb(0,0,0)" />
+        <line x1="750" y1="300" x2="850" y2="300" style="stroke:#000000;stroke-width:3" />
+        <line x1="750" y1="500" x2="850" y2="500" style="stroke:#000000;stroke-width:3" />
+        <line x1="800" y1="250" x2="800" y2="350" style="stroke:#000000;stroke-width:3" />
+        <line x1="800" y1="450" x2="800" y2="550" style="stroke:#000000;stroke-width:3" />
+        
+        # house lights
+        <polygon points= "215,470 235,470 240,430 225,425 210,430" style="fill:rgb(0,0,0)" />
+        <polygon points= "515,470 535,470 540,430 525,425 510,430" style="fill:rgb(0,0,0)" />
+        <polygon points= "715,470 735,470 740,430 725,425 710,430" style="fill:rgb(0,0,0)" />
+        
+        # house number
+        <line x1="440" y1="420" x2="500" y2="420" style="stroke:#000000;stroke-width:2" />
+        <line x1="440" y1="445" x2="500" y2="445" style="stroke:#000000;stroke-width:2" />
+        
+        # garden 
+        <g transform = "rotate (10 130 105)">
+            <ellipse cx="120" cy="450" rx="50" ry="180" style="fill:green;stroke:black;stroke-width:5" />
+        </g>
+        <circle cx="35" cy="415" r="10" style="fill:rgb(255,255,255);stroke-width:2;stroke:rgb(0,0,0)" />  
+        <circle cx="50" cy="405" r="10" style="fill:rgb(255,255,255);stroke-width:2;stroke:rgb(0,0,0)" />
+        <circle cx="35" cy="430" r="10" style="fill:rgb(255,255,255);stroke-width:2;stroke:rgb(0,0,0)" />
+        <circle cx="63" cy="410" r="10" style="fill:rgb(255,255,255);stroke-width:2;stroke:rgb(0,0,0)" />
+        <circle cx="50" cy="435" r="10" style="fill:rgb(255,255,255);stroke-width:2;stroke:rgb(0,0,0)" />
+        <circle cx="63" cy="427" r="10" style="fill:rgb(255,255,255);stroke-width:2;stroke:rgb(0,0,0)" />
+        
+        <polyline points="50,430 50,450 70,500 60,530 50,550" style="fill:green;stroke:#264d00;stroke-width:3" />
+        <circle cx="50" cy="420" r="10" style="fill:rgb(102,51,0);stroke-width:2;stroke:rgb(102,51,0)" />
+        # driveway
+        <polygon points="250,600 500,600 400,750 150,750" style="fill:rgb(140,140,140);stroke-width:3;stroke:rgb(0,0,0)" />
+        
+        # house number
+        <style>
+            .my_style { font: bold 20px "Century Schoolbook", Serif; }
+        </style> 
+        <text x="440" y="440" fill="#000000" class="my_style">12345<text/>
+        
+        
+        
+        
+        
+
+    </svg>
+</body>    
